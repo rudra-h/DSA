@@ -9,7 +9,7 @@ class Solution:
         start = 1 if k > 0 else n+k
         end = k if k> 0 else n-1
         wSum = 0
-        
+           
         wSum = sum(code[i%n] for i in range(start, end + 1))
 
         for i in range(n):
